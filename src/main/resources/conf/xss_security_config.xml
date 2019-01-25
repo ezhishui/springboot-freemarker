@@ -14,28 +14,18 @@
     <!-- 是否开启特殊url校验 -->
     <isCheckUrl>true</isCheckUrl>
     <!-- 特殊URL检测，不使用通用正则匹配 -->
-    <checkUrlList>
-        <!-- 支持匹配多个或者零个正则 -->
-        <!-- <checkUrl>
-            <url>RelationAction.do</url>
-            <regex>xjh</regex>
-        </checkUrl>
-        <checkUrl>
-            <url>CompanyAction.do</url>
-        </checkUrl> -->
-        <checkUrl>
-            <url>imgshow</url>
-        </checkUrl>
-    </checkUrlList>
+    <whiteUrlList>
+           <url>imgshow</url>
+    </whiteUrlList>
 
     <!-- 通用URL正则 -->
     <regexList>
         <!-- 匹配含有字符： < > 支持多正则匹配 ,必填项  -->
         <!--regex><![CDATA[.*[<|>|'|"].*]]></regex-->
-         <!-- 匹配含有字符： iframe  add yangyanan -->  
+         <!-- 匹配含有字符： iframe  -->  
         <regex><![CDATA[.*[I|i][F|f][R|r][A|a][M|m][E|e].*]]></regex> 
         
-        <!-- 匹配含有字符： script  add yangyanan -->  
+        <!-- 匹配含有字符： script  -->  
         <regex><![CDATA[.*[S|s][C|c][R|r][I|i][P|p][T|t].*]]></regex> 
         
         <!-- 匹配含有字符： alert( ) modify yangyanan 匹配%2b-->  
@@ -52,8 +42,6 @@
         <regex><![CDATA[.*[U|u][N|n][E|e][S|s][C|c][A|a][P|p][E|e]\\s*\\(.*\\).*]]></regex>  
         <!-- 匹配含有字符： execscript( ) -->  
         <regex><![CDATA[.*[E|e][X|x][E|e][C|c][S|s][C|c][R|r][I|i][P|p][T|t]\\s*\\(.*\\).*]]></regex>  
-        <!-- 匹配含有字符： msgbox( ) -->  
-        <regex><![CDATA[.*[M|m][S|s][G|g][B|b][O|o][X|x]\\s*\\(.*\\).*]]></regex>  
         <!-- 匹配含有字符： confirm( ) -->  
         <regex><![CDATA[.*[C|c][O|o][N|n][F|f][I|i][R|r][M|m]\\s*\\(.*\\).*]]></regex>  
         <!-- 匹配含有字符： prompt( ) -->  

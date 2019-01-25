@@ -35,7 +35,7 @@ public class XSSSecurityConstants {
     /**
      * 特殊url过滤标签  checkUrlList
      */
-    public static String CHECK_URL_LIST = "checkUrlList";
+    public static String WHITE_URL_LIST = "whiteUrlList";
     public static String CHECK_URL_URL = "url";
     public static String CHECK_URL_REGEX = "regex";
 
